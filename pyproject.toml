@@ -12,7 +12,7 @@ readme = "README.md"
 requires-python = ">= 3.12"
 
 [project.scripts]
-hello = "get_yid:hello"
+get_yid = "get_yid:get_yid"
 
 [build-system]
 requires = ["hatchling"]
