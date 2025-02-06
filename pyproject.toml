@@ -1,0 +1,29 @@
+[project]
+name = "get-yid"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "sana", email = "takagisou@users.noreply.github.com" }
+]
+dependencies = [
+    "yt-dlp>=2025.1.26",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[project.scripts]
+hello = "get_yid:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/get_yid"]
